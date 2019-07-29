@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(0,0,0,.8);
+  background-color: #ededed;
+}
+
+ol, ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.content {
+  width: 600px;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
