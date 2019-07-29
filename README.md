@@ -1,19 +1,34 @@
 
 # Financial Account
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+Financial Account is an angular application to manages user balances, transactions
+Credit and Debit operations.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run Local Development
 
-## Code scaffolding
+### Install nodejs
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://nodejs.org/en/
 
-## Build
+### Install angular framework
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`npm install -g @angular/cli`
+
+### Run a dev server in the command line
+
+`ng serve`
+
+### Navigate in the browser 
+`http://localhost:4200/`
+
+
+## Build the project for production enviroment
+
+### Execute in the command line to build the project
+
+`ng build`
+
 
 ## Running unit tests
 
@@ -23,7 +38,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 

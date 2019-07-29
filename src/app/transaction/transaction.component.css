@@ -1,0 +1,13 @@
+.transaction-container {
+  flex-basis: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.button-space{
+  margin-right: 10px;
+}

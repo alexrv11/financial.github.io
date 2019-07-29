@@ -1,0 +1,28 @@
+.balance-container {
+  flex-basis: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.amount-simbol{
+  font-size: .7em;
+  line-height: 2;
+  margin-right: .2em;
+  font-weight: 600;
+  color: rgb(8, 117, 8);
+}
+
+.amount-value {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(8, 117, 8);
+}
+
+.btn-container{
+  padding: 5px;
+  display: inline;
+}
