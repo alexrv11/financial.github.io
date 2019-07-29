@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { TransactionService } from '../repository/transaction.service';
 
 @Component({
   selector: 'app-transaction',
@@ -10,12 +11,23 @@ export class TransactionComponent implements OnInit {
   type: string;
   private sub: any;
 
-  constructor(private route: ActivatedRoute) {}
+  @Input() transactionDetails = { id: '', transactionType: '', amount: 0 }
+
+  constructor(private route: ActivatedRoute,  public restApi: TransactionService, 
+    public router: Router) {}
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.type = params['type'];
+      this.transactionDetails.transactionType = this.type;
    });
+  }
+
+  addTransaction() {
+    this.transactionDetails.amount = +this.transactionDetails.amount;
+    this.restApi.createTransaction(this.transactionDetails).subscribe((data: {}) => {
+      this.router.navigate([''])
+    })
   }
 
   ngOnDestroy() {

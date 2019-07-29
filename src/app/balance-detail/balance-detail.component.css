@@ -29,3 +29,11 @@
   display: block;
   font-size: .7em;
 }
+
+.credit{
+  background-color: #90f790;
+}
+
+.debit{
+  background-color: #b2dfdb;
+}
