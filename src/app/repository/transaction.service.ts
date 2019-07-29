@@ -10,7 +10,7 @@ import { retry, catchError } from 'rxjs/operators';
 export class TransactionService {
 
   // Define API
-  apiURL = 'http://localhost:1323';
+  apiURL = 'http://ec2-34-205-139-244.compute-1.amazonaws.com:1323';
   transactionUri = '/users/1234/transactions';
 
   constructor(private http: HttpClient) { }
